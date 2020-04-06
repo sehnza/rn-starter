@@ -3,10 +3,10 @@ import React from 'react'
 import { Text, Stylesheet } from 'react-native'
 
 const ComponentsScreen = () => {
-  return <text style={styles.textStyle}>This is the components screen</text>
+  return <Text style={styles.textStyle}>This is the components screen</Text>
 }
 
-const styles = StyleSheet.create({
+const styles = Stylesheet.create({
   textStyle: {
     fontSize: 30
   }
