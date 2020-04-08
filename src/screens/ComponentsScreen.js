@@ -1,24 +1,18 @@
 import React from 'react'
-// imports one or more small parts from the react native library
-import { Text, View, StyleSheet } from 'react-native'
+import styled from 'styled-components'
 
 const ComponentsScreen = () => {
   const name = 'Hayden'
 
-  return <View>
-    <Text style={styles.textStyle}>Getting started with React Native!</Text>
-    <Text style={styles.textStyle2}>My name is {name}</Text>
-  </View>
+  return <>
+    <Title large>Getting started with React Native!</Title>
+    <Title>My name is {name}</Title>
+  </>
 
 }
 
-const styles = StyleSheet.create({
-  textStyle: {
-    fontSize: 45
-  },
-  textStyle2: {
-    fontSize: 20
-  }
-})
+const Title = styled.Text`
+  font-size: ${props => props.large ? 45 : 20}px;
+`
 
 export default ComponentsScreen
