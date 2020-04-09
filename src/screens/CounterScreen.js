@@ -16,10 +16,7 @@ const CounterScreen = () => {
       setCounter(counter - 1)
     }} />
 
-    <Button 
-      title="Clear Counter" onPress={() => {
-      setCounter(setCounter = 0)
-    }} />
+ 
     <Title>Current Count: {counter}</Title>
     </>
 }
@@ -29,3 +26,5 @@ const Title = styled.Text`
 `
 
 export default CounterScreen
+
+
